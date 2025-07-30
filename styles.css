@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.month-selector {
+  margin-bottom: 8px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.worker-table-section {
+  flex: 2 1 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.controls label {
+  font-weight: 500;
+}
+#worker-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+#worker-table th, #worker-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 10px;
+  text-align: center;
+}
+#worker-table th {
+  background: #f0f4f8;
+  font-weight: 600;
+}
+#worker-table td input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+}
+#worker-table .remove-worker {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.table-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #125ea7;
+}
+.summary-section {
+  flex: 1 1 320px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  min-width: 280px;
+  margin-bottom: 24px;
+}
+.summary-section h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#summary-content {
+  margin-top: 12px;
+  font-size: 1.05em;
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 0;
+  }
+  .worker-table-section, .summary-section {
+    margin-bottom: 18px;
+  }
+} 
